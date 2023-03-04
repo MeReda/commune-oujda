@@ -8,6 +8,7 @@ const Home = () => {
 		<>
 			<NavBar />
 			<Landing />
+			make sure to import the style.css after the bootstrap file
 		</>
 	);
 };
