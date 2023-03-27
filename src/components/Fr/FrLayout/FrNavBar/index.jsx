@@ -65,6 +65,7 @@ const FrNavBar = () => {
 								Login
 							</NavLink>
 						</li>
+
 						<li>
 							<NavLink className="dropdown-item" to="/ar">
 								Ar

@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import './App.scss';
 import FrHome from './components/Fr/FrHome';
 import FrLayout from './components/Fr/FrLayout';
@@ -22,14 +23,17 @@ import FrError from './components/Fr/FrError';
 import FrReclamation from './components/Fr/FrReclamation';
 import ArReclamation from './components/Ar/ArReclamation';
 import Auth from './components/Auth';
-import Login from './components/Auth/Login';
+import Login from './components/Auth/Login/Login';
+import Signup from './components/Auth/SignUp/Signup';
 
 const App = () => {
+
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Navigate to="/fr" replace />} />
 				<Route path="login" element={<Login />} />
+				<Route path="/signup" element={<Signup />} />
 
 				<Route path="/fr" element={<FrLayout />}>
 					<Route path="*" element={<FrError />} />
