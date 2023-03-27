@@ -22,10 +22,11 @@ export default function (props) {
 						<div className="form-group mt-3">
 							<label>Email address</label>
 							<input
-								type="email"
-								className="form-control mt-1"
-								placeholder="Enter email"
-							/>
+					type="text"
+					placeholder="enter your e-mail"
+					value={email}
+					onChange={e => setEmail(e.target.value)}
+				/>
 						</div>
 						<div className="form-group mt-3">
 							<label>Password</label>
