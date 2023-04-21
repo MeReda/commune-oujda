@@ -31,6 +31,7 @@ import ArReclamation from '../components/Ar/ArReclamation';
 import FrServices from '../components/Fr/FrServices';
 import E_Services from '../components/Fr/FrServices/E_Services';
 import Procedures_ad from '../components/Fr/FrServices/Procedures_ad';
+import FrPresident from '../components/Fr/FrPresident';
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
 			<Route path="/fr" element={<FrLayout />}>
 				<Route path="*" element={<FrError />} />
 				<Route index element={<FrHome />} />
+				<Route path="president" element={<FrPresident />} />
 				<Route path="services">
 					<Route index element={<FrServices />} />
 					<Route path="e-services" element={<E_Services />} />

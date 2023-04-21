@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
 import Azzaoui from '/imgs/Azzaoui.jpg';
 
 const President = () => {
 	return (
-		<>
-			<h4>Président</h4>
+		<Link to="president">
 			<div className="card text-bg-dark">
 				<img src={Azzaoui} className="card-img  custom-filter" alt="..." />
 				<div className="card-img-overlay d-flex align-items-end justify-content-center">
@@ -12,7 +12,7 @@ const President = () => {
 					</h5>
 				</div>
 			</div>
-		</>
+		</Link>
 	);
 };
 
